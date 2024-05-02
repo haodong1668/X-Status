@@ -18,7 +18,6 @@ const Footer = () => {
           to={`https://github.com/${githubName}/`}
         />
         <CustomLink iconDom={<Home />} to={homeUrl} />
-        <CustomLink iconDom={<Mail />} to={emailUrl} />
       </div>
       <div className="text">
         <p>
@@ -29,6 +28,9 @@ const Footer = () => {
           &nbsp;Version&nbsp;{Package.version}
         </p>
         <p>
+          <CustomLink to="https://www.beian.miit.gov.cn/" text="粤ICP备14074675号" />
+        </p>
+        <p>
           基于&nbsp;
           <CustomLink to="https://uptimerobot.com/" text="UptimeRobot" />
           &nbsp;接口&nbsp;|&nbsp;检测频率 5 分钟
@@ -36,13 +38,7 @@ const Footer = () => {
         <p>
           Copyright&nbsp;&copy;&nbsp;2020&nbsp;-&nbsp;{new Date().getFullYear()}
           &nbsp;
-          <CustomLink to="https://5nav.eu.org/" text="谢週五の导航站" />
-          {siteIcp ? (
-            <React.Fragment>
-              &nbsp;|&nbsp;
-              <CustomLink to="https://beian.miit.gov.cn/" text={siteIcp} />
-            </React.Fragment>
-          ) : null}
+          <CustomLink to="https://www.lovepcos.cn/" text="星苒鸭の导航站" />
         </p>
       </div>
     </footer>
